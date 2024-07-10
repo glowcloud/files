@@ -1,0 +1,15 @@
+openapi: 3.0.3
+info:
+  title: relative
+  version: 1
+paths:
+  /test:
+    get:
+      responses:
+        '200':
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: ./relativeRefsB.yaml
+          
